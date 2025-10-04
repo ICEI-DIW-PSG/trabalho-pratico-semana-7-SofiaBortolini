@@ -2,12 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Next Trip</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
 </head>
 <body>
-    <h1>Olá mundo</h1>
+    <a href="detalhes.html">Ver detalhes</a>
+    
+    </header>
+
+    
+    <!--Barra superior-->
+    <header class="bg-light py-2 border-bottom">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <img src="logo.png" alt="Logo" style="width: 120px; height:auto;">
+        <div class="d-flex flex-grow-1">
+        <input type="text" class="form-control me-2" placeholder="Para onde deseja ir?">
+        <button class="btn btn-primary">Buscar</button>
+        </div>
+        <div class="text-primary small"> Canal de Atendimento (31) 3456-7890</div>
+        <button class="btn btn-primary"> Minhas viagens</button>
+    </header>
+    <!--Cabeçalho-->
+    <header>
+        <nav class= "navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggles-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto flex-wrap">
+                <li class="nav-item"><a class="nav-link" href= "pacotes.html">Pacotes</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "passagens.html">Passagens</a></li>
+                <li class="nav-item"><a class="nav-link" href= "hoteis.html">Hotéis</a></li>
+                <li class="nav-item"><a class="nav-link" href= "promoçoes.html">Promoções</a></li>
+                <li class="nav-item"><a class="nav-link" href= "terrestres.html">Terrestres</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "aereos.html">Aéreos</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "cruzeiro.html">Cruzeiro</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "internacional.html">Internacional</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "praias.html">Praias</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "pacotesprontos.html">Pacotes prontos</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "paratodafamilia.html">Para toda família</a></li>
+            </ul>
+           </div>
+          </div>
+           
+          
+        </nav>
+    </header>
+    <!--Barra de buscas-->
+    <section class="Busca">
+        <h5>Seu próximo destino começa aqui...</h5>
+        <form>
+            <label><input type="radio" name="tipo" checked>Ida e volta</label>
+            <label><input type="radio" name="tipo">Só ida </label>
+            <label><input type="radio" name="tipo">Vários destinos </label>
+            <br>
+            Origem: <input type="text">
+            Destino: <input type="text">
+            Início: <input type="date">
+            Fim: <input type="date">
+            N° de viajantes: <input type="number" min="1">
+            <button type="submit">Buscar</button>
+        </form>
+        
+
+    </section>
+    <!--Postagens-->
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+        
+            <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmlvJTIwZGUlMjBqYW5laXJvfGVufDB8fDB8fHww" class="card-img-top" alt="Imagem Rio de Janeiro">
+            <div class="card-body">
+            <h1 class="card-title">Pacotes para Rio de Janeiro</h1>
+            <p class="card-text">
+                13/11/2025 até 16/11/2025<br>
+                Voo direto SP -> RJ<br>
+                Hospedagem: Rio da Lapa<br>
+                R$ 516,00 por pessoa<br>
+            </p>
+            </div>
+            </div>
+            </div>
+        
+        <div class="col-md-4"> 
+            <div class="card h-100">
+            <img src="https://portosegurobahia.com.br/wp-content/uploads/2021/04/porto-seguro-bahia-1500x844-1.jpg" class="card-img-top" alt="Imagem Porto Seguro">
+            <div class="card-body">
+            <h3 class= "card-title">Pacotes para Porto Seguro</h3>
+            <p class="card-text">
+              10/12/2025 até 15/12/2025<br>
+              Voo direto SP -> BPS<br>
+              Hospedagem: Astral Mucugê Pousada<br>
+              R$ 1.137,00 por pessoa<br>
+            </p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100"> 
+            <img src="https://dicasmaceioemaragogi.com.br/wp-content/uploads/sites/17/2021/07/maceio-cidade-brasil.jpg" class="card-img-top" alt="Imagem Maceió">
+            <div class="card-body">
+            <h4 class="card-title">Pacotes para Maceió</h4>
+            <p class="card-text">
+                29/03/2026 até 03/04/2026<br>
+                Voo direto SP -> MCZ<br>
+                Hospedagem: Reymar Express<br>
+                R$1.548,00 por pessoa<br>
+            </p>
+            </div>
+       </div>
+       </div>
+       </div>
+
+    </main>
+
+    	
 </body>
 </html>
